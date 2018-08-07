@@ -29,7 +29,6 @@ class ClickableRenderer extends React.Component<any, any> {
                 }
         })
         console.log("data should be deleted",myData);
-       // store.dispatch(actions.updateRecord(this.props.agGridReact.gridOptions.rowData))
        this.props.updateRecord(myData);
     }
 
@@ -54,4 +53,3 @@ const mapStateToProps = (state: any) => {
   };
   
   export default connect(mapStateToProps, mapDispatchToProps)(ClickableRenderer);
-//export default ClickableRenderer;

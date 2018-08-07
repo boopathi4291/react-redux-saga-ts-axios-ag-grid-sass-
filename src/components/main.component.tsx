@@ -45,10 +45,5 @@ const mapStateToProps = (state: any) => {
         myData:state.records
     };
   };
-  
-//   const mapDispatchToProps = (dispatch: Dispatch) => {
-//     return bindActionCreators({ getAllRecords, updateRecord }, dispatch)
-//   };
-  
-  export default connect(mapStateToProps, {})(MainComponent);
-//export default MainComponent;
+    
+  export default connect(mapStateToProps)(MainComponent);
