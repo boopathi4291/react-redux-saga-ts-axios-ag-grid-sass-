@@ -29,8 +29,8 @@ class GridComponent extends React.Component<any, any>{
     componentDidMount() {
         this.props.getAllRecords();
       }
-    componentWillReceiveProps() {
-        this.setState({ rowData: this.props.myData });
+    componentWillReceiveProps(nextProps:any) {
+        this.setState({ rowData: nextProps.myData });
     }
     shouldComponentUpdate() {
         return true
