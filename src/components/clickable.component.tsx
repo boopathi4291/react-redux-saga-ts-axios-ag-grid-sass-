@@ -22,7 +22,7 @@ class ClickableRenderer extends React.Component<any, any> {
 
     public clicked() {
         console.log("Child Cell Clicked: " , this.props.myData);
-        let myData=this.props.myData
+        let myData=[...this.props.myData];
         myData.map((data:any, index:number)=>{
                 if(data.title == this.props.data.title){
                         

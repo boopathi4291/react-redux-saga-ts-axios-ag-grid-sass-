@@ -26,7 +26,7 @@ class RecordComponent extends React.Component<any, any>{
     }
 
     onClickSubmit: React.ChangeEventHandler<HTMLInputElement> = () => {
-        let myData = this.props.myData;
+        let myData = [...this.props.myData];
         myData.push(this.state)
         this.props.updateRecord(myData);
         this.setState({
