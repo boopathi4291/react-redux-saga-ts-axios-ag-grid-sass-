@@ -1,5 +1,6 @@
 {
-  "extends": [],
+  "extends": ["tslint:latest"],
+  "defaultSeverity":"warning",
   "linterOptions": {
     "exclude": [
       "config/**/*.js",
