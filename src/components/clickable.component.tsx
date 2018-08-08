@@ -28,7 +28,6 @@ class ClickableRenderer extends React.Component<any, any> {
                     myData.splice(index,1)
                 }
         })
-        console.log("data should be deleted",myData);
        this.props.updateRecord(myData);
     }
 
